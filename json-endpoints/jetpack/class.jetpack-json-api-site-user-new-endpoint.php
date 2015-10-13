@@ -39,8 +39,8 @@ class WPCOM_JSON_API_Site_User_New_Endpoint extends Jetpack_JSON_API_Endpoint {
 				return $result['errors'];
 			}
 		}
-		if ( empty( $this->user['user_email'] ) ){
-			$this->user['user_email'] = wp_generate_password();
+		if ( empty( $this->user['user_pass'] ) ){
+			$this->user['user_pass'] = wp_generate_password();
 		}
 		return true;
 	}
