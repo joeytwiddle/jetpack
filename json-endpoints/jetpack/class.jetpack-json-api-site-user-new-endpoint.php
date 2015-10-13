@@ -26,7 +26,7 @@ class WPCOM_JSON_API_Site_User_New_Endpoint extends Jetpack_JSON_API_Endpoint {
 					break;
 				case 'display_name':
 				case 'name':
-					$this->user[ 'last_name' ] = $value;
+					$user[ 'display_name' ] = $value;
 					break;
 			}
 		}
